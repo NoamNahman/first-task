@@ -1,0 +1,19 @@
+###
+
+GET http://localhost:3000/
+
+###
+
+GET http://localhost:3000/recipes
+
+###
+
+POST http://localhost:3000/recipes
+
+###
+
+PUT http://localhost:3000/recipes
+
+###
+
+DELETE http://localhost:3000/recipes
