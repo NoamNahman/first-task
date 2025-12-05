@@ -1,19 +1,48 @@
 ###
-
 GET http://localhost:3000/
 
 ###
-
 GET http://localhost:3000/recipes
 
 ###
+GET http://localhost:3000/recipes?title=pasta
 
+###
+GET http://localhost:3000/recipes/69333905f164af78146cdd9f
+
+###
+GET http://localhost:3000/recipes/69
+
+###
 POST http://localhost:3000/recipes
+Content-Type: application/json
+
+{
+  "title": "pasta3",
+  "instructions": "Cook pasta. Prepare sauce. Mix together."
+}
 
 ###
+PUT http://localhost:3000/recipes/69331dd57893f31493d10dee
+Content-Type: application/json
 
-PUT http://localhost:3000/recipes
+{
+  "title": "spaghetti",
+  "instructions": "Boil spaghetti. Prepare marinara sauce. Combine and serve."
+}
 
 ###
+PUT http://localhost:3000/recipes/12345
+Content-Type: application/json
 
-DELETE http://localhost:3000/recipes
+{
+  "title": "spaghetti",
+  "instructions": "Boil spaghetti. Prepare marinara sauce. Combine and serve."
+}
+
+###
+DELETE http://localhost:3000/recipes/12345
+
+
+###
+DELETE http://localhost:3000/recipes/69331dd57893f31493d10dee
